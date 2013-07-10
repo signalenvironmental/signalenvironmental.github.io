@@ -750,6 +750,43 @@ textarea {
   *zoom: 1;
 }
 
+/* line 3, ../sass/partials/_inc/_typography.scss */
+body {
+  font-family: 'Istok Web', sans-serif;
+  color: #393a3e;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 10, ../sass/partials/_inc/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+
+/* line 15, ../sass/partials/_inc/_typography.scss */
+h1, h2 {
+  font-size: 47px;
+  line-height: 84px;
+}
+
+/* line 20, ../sass/partials/_inc/_typography.scss */
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+/* line 25, ../sass/partials/_inc/_typography.scss */
+h4, h5, h6 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* line 31, ../sass/partials/_inc/_typography.scss */
+.wf-loading p {
+  opacity: 0;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -761,7 +798,7 @@ textarea {
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-/* line 7, ../sass/partials/_layout.scss */
+/* line 8, ../sass/partials/_layout.scss */
 .hero {
   background: url(/images/testing/solar.jpg) no-repeat center center;
 }

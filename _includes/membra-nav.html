@@ -1,0 +1,9 @@
+<nav>
+	<ul>
+		<li><a class="nav-home" href="/">Home</a></li>
+		{% for page in site.categories.menu %}
+		<li><a class="nav-{{ page.title }}" href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endfor %}
+		<li><a class="nav-contact" href="mailto:jon@solomongiles.com?sqs_title=Get+in+Touch">Contact</a></li>
+	</ul>
+</nav>
