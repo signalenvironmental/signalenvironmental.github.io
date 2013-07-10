@@ -1,0 +1,14 @@
+<footer>
+
+	<!-- emblem goes here -->
+
+	<nav>
+		<ul>
+			<li><a class="nav-home" href="/">Home</a></li>
+			{% for page in site.categories.menu %}
+			<li><a class="nav-{{ page.title }}" href="{{ page.url }}">{{ page.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+</footer>

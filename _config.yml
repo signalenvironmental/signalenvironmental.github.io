@@ -1,2 +1,3 @@
-name: Your New Jekyll Site
+name: Signal Environmental
 pygments: true
+permalink: /:title

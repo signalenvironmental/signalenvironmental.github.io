@@ -1,0 +1,7 @@
+%image1 {
+	background-image: url(datauri);
+}
+
+.image1 {
+	@extend %image1;
+}
