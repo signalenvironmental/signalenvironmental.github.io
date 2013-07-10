@@ -784,7 +784,7 @@ h4, h5, h6 {
 
 /* line 31, ../sass/partials/_inc/_typography.scss */
 .wf-loading p {
-  opacity: 0;
+  color: red;
 }
 
 /* ==========================================================================
