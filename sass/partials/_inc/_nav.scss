@@ -1,0 +1,19 @@
+nav ul {
+	float: right;
+
+	li {
+		display: inline-block;
+		margin-right: $base * 2;
+		font-weight: 500;
+		font-family: 'Maven Pro', sans-serif;
+	}
+
+	a {
+		color: $dark;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $white;
+	}
+}

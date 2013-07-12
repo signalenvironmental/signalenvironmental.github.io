@@ -1,9 +1,14 @@
 <header>
+<div class="header-images">
 
-	<h1 class="title"><a href="/">{{ site.name }}</a></h1>
+	<div class="masthead clearfix">
+		<h1 class="logo"><a href="/" title="{{ site.name }}"><img src="/images/signal-environmental.svg" alt="{{ site.name }}" /></a></h1>
+		{% include membra-nav.html %}
+	</div>
 
-	{% include membra-nav.html %}
+	{% if page.h2 != null %}<h2>{{ page.h2 }}</h2>{% endif %}
+	{% if page.h3 != null %}<h3>{{ page.h3 }}</h3>{% endif %}
+	{% if page.url == '/index.html' %}<a class="btn" href="/services">Learn More</a>{% endif %}
 
+</div>
 </header>
-
-

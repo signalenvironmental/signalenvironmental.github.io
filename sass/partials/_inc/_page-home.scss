@@ -1,0 +1,21 @@
+.home {
+	header {
+		// http://compass-style.org/reference/compass/css3/images/
+ 		@include background(
+        	linear-gradient(top left, $dark-blue, $light-blue) no-repeat center center);
+		position: relative;
+ 		height: $base * 20;
+
+ 		.header-images {
+	 		@include background(
+	        	$solarpanel no-repeat bottom left,
+	        	$cloud no-repeat center right);
+ 			position: absolute;
+ 			top: 0;
+ 			right: 0;
+ 			bottom: 0;
+ 			left: 0;
+ 			background-size: auto 80%;
+ 		}
+	}
+}

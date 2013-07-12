@@ -1,0 +1,32 @@
+header {
+
+	.logo {
+		display: inline-block;
+		float: left;
+
+		img {
+			margin: 6px 0 0 31px;
+			width: 231px;
+		}
+	}
+
+	li {
+		margin-top: $base;
+	}
+
+
+	h2, h3 {
+		text-align: center;
+	}
+
+	h2 {
+		margin-top: $base * 2;
+	}
+
+	.btn {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 116px;
+	}
+}

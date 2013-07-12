@@ -1,0 +1,16 @@
+$grids: 12;
+$gutters: 2/3;
+
+* {
+  @include box-sizing('border-box');
+}
+
+
+html {
+	//@include background-grid;
+}
+
+
+header, footer {
+	@include grid-span(12, 1);
+}

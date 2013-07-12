@@ -11,4 +11,4 @@
 
         <link rel="stylesheet" href="/stylesheets/style.css">
     </head>
-    <body>
+    <body class="{% if page.url != '/index.html' %}{{page.title | downcase }}{% endif %}{% if page.url == '/index.html' %}home{% endif %}">
