@@ -1,17 +1,11 @@
 // Plugings
 @import "singularitygs";
-// @import "compass";
-// @import "compass/css3";
-// @import "compass/css3/images";
 
 // H5BP
-@import "_inc/normalize";
-@import "_inc/h5bp";
-@import "_inc/helper";
+@import "_base/normalize";
+@import "_base/h5bp";
+@import "_base/helper";
 
 // Includes
-@import "_inc/images";
-@import "_inc/colors";
-
-// Type
-@import "_inc/typography";
+@import "_base/images";
+@import "_base/colors";
