@@ -1,0 +1,35 @@
+.bubble {
+	position: relative;
+	padding: $base * 2 0;
+	height: 226px;
+	border-radius: 200px;
+	background: $dark;
+	color: $white;
+	text-align: center;
+
+	h5 {
+		margin: $base 0 0;
+		color: $white;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	.btn {
+		display: block;
+		margin: 11px auto 0;
+		width: 116px;
+		background: RGBA(255,255,255,0.75);
+	}
+}
+
+.bubble:after {
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    border-width: 40px 0px 0px 100px;
+    border-style: solid;
+    border-color: $dark transparent;
+    content: "";
+}

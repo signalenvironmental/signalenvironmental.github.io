@@ -4,12 +4,12 @@
  		@include background(
         	linear-gradient(top left, $dark-blue, $light-blue) no-repeat center center);
 		position: relative;
- 		height: $base * 20;
 
  		.header-images {
 	 		@include background(
 	        	$solarpanel no-repeat bottom left,
-	        	$cloud no-repeat center right);
+	        	$cloud no-repeat center right
+	        	);
  			position: absolute;
  			top: 0;
  			right: 0;
@@ -17,5 +17,33 @@
  			left: 0;
  			background-size: auto 80%;
  		}
+	}
+
+	section {
+		clear: both;
+		width: 100%;
+		background: $white;
+		background-image: $bg-grid;
+		background-repeat: repeat-x;
+		background-position:center;
+		background-size: contain;
+
+		.span2-1 {
+			margin-top: $base * 3;
+		}
+		.span1-3 {
+			margin-top: $base * 2;
+		}
+	}
+
+	.intro {
+		height: $base * 20;
+	}
+
+	.services {
+		background: lighten($dark, 70%);
+
+		.wrapper {padding: 0; border: none !important;}div {		border-top:5px solid $dark; padding-top: 21px;
+}
 	}
 }
