@@ -1,0 +1,3 @@
+# End Jekyll & Compass
+kill $(pgrep jekyll)
+kill $(pgrep compass)
