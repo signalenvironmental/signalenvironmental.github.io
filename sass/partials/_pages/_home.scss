@@ -41,9 +41,10 @@
 	}
 
 	.services {
-		background: lighten($dark, 70%);
+		background: $light;
 
-		.wrapper {padding: 0; border: none !important;}div {		border-top:5px solid $dark; padding-top: 21px;
-}
+		.wrapper {padding: 0; border: none !important;}
+
+		div {border-top:5px solid $dark; padding-top: 21px;}
 	}
 }

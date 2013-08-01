@@ -1,0 +1,23 @@
+.projects {
+	background: $light $project-bg no-repeat center top;
+	background-size: 100% auto;
+
+	article {
+		margin-bottom: $base * 4;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.text-box {
+		background: $dark;
+		color: $light;
+		padding: $base;
+	}
+
+	img {
+		width: 100%;
+	}
+
+}
