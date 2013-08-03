@@ -1,0 +1,21 @@
+.about {
+
+	header {
+		background: $dark $about-header no-repeat right center;
+		background-size: cover;
+		
+		h2 {
+			color: $light;
+		}
+	}
+
+	.intro {
+		background: $dark;
+		color: $light;
+	}
+
+	.details {
+		background: $light;
+	}
+
+}

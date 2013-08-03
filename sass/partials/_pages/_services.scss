@@ -1,0 +1,76 @@
+.services {
+
+	header {
+		background: transparent url('/images/services/services-scene.svg') no-repeat center bottom;
+		position: relative;
+		z-index: 100;
+
+		h2 {
+			position: relative;
+			z-index: 1000;
+			color: $white;
+		}
+
+	}
+
+
+	.turbine {
+		position: relative;
+		z-index: 10;
+
+		.spin {
+			position: absolute; 
+			top: -390px;
+			left: 502px;
+			transform: rotate(0deg);
+			
+			path {
+				fill: #393a3e;
+			}
+		}
+
+		.post {
+			position: absolute; 
+			top: -220px; 
+			left: 657px;
+			width: 14px;
+			height: 220px;
+			background: #393a3e;
+		}
+
+	}
+
+
+	.intro {
+		margin-top: -1px;
+		background: $dark;
+
+		.lead {
+			color: $white;
+		}
+
+	}
+
+
+	.services-list {
+		background: $light;
+
+		article {
+			margin-bottom: $base * 3;
+		}
+
+		.description {
+			margin-top: $base - 9;
+			padding-top: $base;
+			border-top: 9px solid $white;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 60%;
+		}
+	}
+
+
+}

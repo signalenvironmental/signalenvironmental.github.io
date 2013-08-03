@@ -2,6 +2,10 @@
 	background: $light $project-bg no-repeat center top;
 	background-size: 100% auto;
 
+	header {
+		height: $base * 16;
+	}
+
 	article {
 		margin-bottom: $base * 4;
 

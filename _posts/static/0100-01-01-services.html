@@ -1,7 +1,87 @@
 ---
 layout: default
-title:  Services
+title: Services
 categories: menu
+h2: Services
 ---
 
-services
+	<div class="wrapper turbine">
+		<div class="post"></div>
+		<svg class="spin" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="325px" height="325px" viewBox="-90.5 -90.5 325 325" enable-background="new -90.5 -90.5 325 325" xml:space="preserve"><path d="M173.756 92.3L92.334 70.792c-0.398-7.027-4.407-13.658-11.141-17.067 -2.528-1.277-5.2-1.979-7.855-2.152L51.712-27.936C42.766-60.656 23.051-74.71 23.051-74.71l13.815 50.445L58.865 56.32c-2.047 1.723-3.783 3.87-5.066 6.398 -2.811 5.566-2.826 11.807-0.574 17.137L-6.25 139.298c-23.965 24.016-26.373 48.11-26.373 48.11l36.925-37.045 59.653-59.732c8.278 3.562 17.76 1.215 23.463-5.407l82.074 21.759c32.798 8.66 54.844-1.361 54.844-1.361L173.756 92.3z"/></svg>
+	</div>
+
+
+<section class="intro">
+
+	<div class="wrapper">
+		<p class="lead">In North America, we spend 90% of our lives indoors, and yet our buildings are plagued by poor air quality. In a typical office building, lighting, heating, and cooling represent 65 percent of total energy consumption, and yet most buildings hemorrhage heating and cooling power. Energy efficient design and construction is not only the right choice for your bottom line, but also the best choice for a healthy life.</p>
+	</div>
+
+</section>
+
+
+<section class="services-list">
+
+	<div class="wrapper grid-golden clearfix">
+		<article class="clearfix">
+			<div class="span2-1 description">
+				<h4>Site Assessment and Due Diligence</h4>
+				<p>Understanding the suitability of a site prior to acquisition can avoid costly “surprises” during development. Signal Environmental assessments examine possible environmental legacy issues and provide solutions. Geotechnical assessments characterise soil conditions to provide insight on bearing capacity and assist with foundation design.</p>
+			</div>
+			<div class="span1-3">
+				<img src="/images/services/assessment.svg" alt="">
+			</div>
+		</article>
+	</div>
+
+	<div class="wrapper grid-golden clearfix">
+		<article class="clearfix">
+			<div class="span2-2 description">
+				<h4>Project Design Support</h4>
+				<p>High performance building projects start with a well-vetted design. For regional scale developments to individual buildings the most successful projects adopt an integrated design approach that relies on collaborative input. An inclusive approach builds better teams, increases efficiency, and improves overall outcomes. Signal Environmental offers integrated design support to improve specification development leading to the tender process and ultimately to a superior building.</p>
+			</div>
+			<div class="span1-1">
+				<img src="/images/services/design.svg" alt="">
+			</div>
+		</article>
+	</div>
+
+	<div class="wrapper grid-golden clearfix">
+		<article class="clearfix">
+			<div class="span2-1 description">
+				<h4>Construction Performance Surveillance and Materials Testing Services</h4>
+				<p>Even the best plans and specifications are subject to field interpretation. Signal Environmental provides project surveillance of construction activities to keep the work on schedule and on budget. Testing of soils, concrete, steel, and building envelope ensure a building is delivered as planned.</p>
+			</div>
+			<div class="span1-3">
+				<img src="/images/services/surveillance.svg" alt="">
+			</div>
+		</article>
+	</div>
+
+	<div class="wrapper grid-golden clearfix">
+		<article class="clearfix">
+			<div class="span2-2 description">
+				<h4>Energy Efficiency Assessments and Energy Reduction Plans</h4>
+				<p>Signal Environmental performs reviews of building envelopes and infrastructure. Mechanical and electrical system improvements can yield savings as well as improved air quality and superior light quality. Often capital investments in these types of upgrades will yield a better than 5 year return on investment.</p>
+				<p>Signal Environmental has over twenty years experience in the design, development, and construction industry. We know the language and team dynamics needed to manage and administer LEED® certification.</p>
+			</div>
+			<div class="span1-1">
+				<img src="/images/services/plans.svg" alt="">
+			</div>
+		</article>
+	</div>
+
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+
+$(function() {
+	$(window).scroll(function() {
+	    var x = $(this).scrollTop();
+	    console.log(x);
+	    $('.spin').css('transform', 'rotate(' + x * 1.5 + 'deg)');
+	});
+});
+</script>
