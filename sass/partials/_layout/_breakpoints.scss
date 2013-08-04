@@ -1,7 +1,56 @@
 @mixin breakpoint($point) {
-	@if $point == nav {
-		@media (max-width: 763px) { @content; }
-	}
+
+	// elements
+
+		// wrapper
+		@if $point == wrapper {
+			@media (max-width: 850px) { @content; }
+		}
+
+		// nav
+		@if $point == nav {
+			@media (max-width: 763px) { @content; }
+		}
+
+
+	// screen sizes
+
+		// most dimensions via http://www.hobo-web.co.uk/best-screen-size/
+
+		// 1920 wide
+		@if $point == widescreen {
+			@media (max-width: 1920px) { @content; }
+		}
+		
+		// 1600 wide
+		@if $point == desktop {
+			@media (max-width: 1600px) { @content; }
+		}
+		
+		// 1280 wide
+		@if $point == laptop {
+			@media (max-width: 1280px) { @content; }
+		}
+
+		// 1024 wide
+		@if $point == netbook {
+			@media (max-width: 1024px) { @content; }
+		}
+
+		// 768 wide (ipad portrait)
+		@if $point == tablet {
+			@media (max-width: 768px) { @content; }
+		}
+
+		// 650 wide (kindle fire portrait)
+		@if $point == mini {
+			@media (max-width: 650px) { @content; }
+		}
+
+		// 568 wide (iphone retina landscape)
+		@if $point == phone {
+			@media (max-width: 568px) { @content; }
+		}
 }
 
 /* 
@@ -13,3 +62,4 @@ nav {
 }
 
 */
+

@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
 	@include rem('font-size',47px);
-	@include rem('line-height', $base * 4);
+	@include rem('line-height', $base * 3);
 	margin: 0;
 }
 
@@ -58,3 +58,12 @@ a:hover {
 	@include rem('line-height', $base * 2);
 	margin-bottom: 0;
 }
+
+
+//breakpoints
+@include breakpoint(phone) { 
+	html {
+		font-size: 50%;
+	}
+}
+
