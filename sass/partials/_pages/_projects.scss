@@ -7,23 +7,20 @@
 	}
 
 	article {
-		margin-bottom: $base * 4;
+		@include rem('margin-bottom', $base * 4);
 
 		p:last-child {
 			margin-bottom: 0;
 		}
 	
 		.text-box {
+			@include rem('padding', $base);
 			background: $dark;
 			color: $light;
-			padding: $base;
 		}
 
 		img {
 			width: 100%;
 		}
-
 	}
-
-
 }

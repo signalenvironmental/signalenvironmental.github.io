@@ -2,18 +2,22 @@
 $base: 21px;
 $border: 9px;
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	color: $dark;
 }
 
-body, p, h5, h6 {
-	font-size: 14px;
+body, p, h4, h5, h6 {
+	@include rem('font-size',14px);
+	@include rem('line-height', $base);
 	font-family: 'Istok Web', sans-serif;
-	line-height: $base;
 }
 
 p, h3, h4, h5, h6 {
-	margin: 0 0 $base;
+	@include rem('margin', 0 0 $base);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,25 +27,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {
+	@include rem('font-size',47px);
+	@include rem('line-height', $base * 4);
 	margin: 0;
-	font-size: 47px;
-	line-height: $base * 4;
 }
 
-h3, .lead {
-	font-size: 32px;
-	line-height: $base * 2;
+h3 {
+	@include rem('font-size',32px);
+	@include rem('line-height', $base * 2);
 }
 
-h4 {
-	font-size: $base;
-	line-height: $base;
-	border-bottom: $border solid $white;
+
+h4, .border-bottom {
+	@include rem('font-size', $base);
 	padding-bottom: $base - $border;
-}
-
-h5 {
-	font-size: 14px;
+	border-bottom: $border solid $white;
 }
 
 a {
@@ -54,11 +54,7 @@ a:hover {
 }
 
 .lead {
+	@include rem('font-size', $base);
+	@include rem('line-height', $base * 2);
 	margin-bottom: 0;
-}
-
-
-// font loading
-.wf-loading h1, h2, h3, h4, h5, h6, p, ul, li, a {
-	//opacity: 0;
 }

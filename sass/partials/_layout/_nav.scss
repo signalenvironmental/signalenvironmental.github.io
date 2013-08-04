@@ -6,13 +6,13 @@ nav {
 	}
 	
 	.menu {
+		@include rem('margin', $base 0);
 		display: block;
 		float: right;
-		margin: $base 0;
 
 		li {
+			@include rem('margin-right', $base * 2);
 			display: inline-block;
-			margin-right: $base * 2;
 			font-weight: 500;
 			font-family: 'Maven Pro', sans-serif;
 		}
@@ -34,9 +34,9 @@ nav {
 		}
 
 		.menu-button {
+			@include rem('margin', 31px ($base * 2) 0 0);
 			display: block;
 			float: right;
-			margin: 31px ($base * 2) 0 0;
 			width: 96px;
 			text-align: center;
 			font-weight: 500;
@@ -57,16 +57,16 @@ nav {
 	}
 
 	.menu {			
+		@include rem('padding', $base $base 0);
 		position: absolute;
 		top: 54px;
 		right: 42px;
-		padding: $base $base 0;
 		background: $dark;
 	}
 
 	.menu li {
+		@include rem('margin', 0 0 $base);
 		display: block;
-		margin: 0 0 21px;
 		text-align: center;
 		font-weight: 500;
 		font-family: 'Maven Pro', sans-serif;

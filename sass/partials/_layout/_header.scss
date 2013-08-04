@@ -6,13 +6,13 @@ header {
 		float: left;
 
 		img {
-			margin: 16px 0 0 31px;
+			@include rem('margin', 16px 0 0 31px);
 			width: 231px;
 		}
 	}
 
 	li {
-		margin-top: $base;
+		@include rem('margin-top', $base);
 	}
 
 
@@ -21,7 +21,7 @@ header {
 	}
 
 	h2 {
-		margin-top: $base * 2;
+		@include rem('margin-top', $base * 2);
 	}
 
 	.btn {

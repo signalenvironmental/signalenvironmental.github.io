@@ -10,9 +10,7 @@
 			z-index: 1000;
 			color: $white;
 		}
-
 	}
-
 
 	.turbine {
 		position: relative;
@@ -37,9 +35,7 @@
 			height: 220px;
 			background: #393a3e;
 		}
-
 	}
-
 
 	.intro {
 		margin-top: -1px;
@@ -48,16 +44,14 @@
 		.lead {
 			color: $white;
 		}
-
 	}
-
 
 	.services-list {
 		background: $light;
 
 		article {
-			margin-bottom: $base * 2;
-			padding-top: $base;
+			@include rem('margin-bottom', $base * 2);
+			@include rem('padding-top', $base);
 		}
 
 		img {
@@ -66,6 +60,4 @@
 			width: 60%;
 		}
 	}
-
-
 }

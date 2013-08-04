@@ -9,7 +9,7 @@ header, footer, section {
 }
 
 section {
-	padding: $base * 2 0;
+	@include rem('padding', ($base * 2) 0);
 }
 
 .wrapper {

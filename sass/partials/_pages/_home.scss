@@ -30,25 +30,15 @@
 		background-size: contain;
 
 		.span2-1 {
-			margin-top: $base * 3;
-		}
-		.span1-3 {
-			margin-top: $base * 2;
+			@include rem('margin-top', $base * 2);
 		}
 	}
 
-	.intro {
-		height: $base * 20;
+	.intro h4 {
+		border-bottom-color: $dark;
 	}
 
 	.services {
 		background: $light;
-
-		// .wrapper {
-		// 	padding: 0; 
-		// 	border: none !important;
-		// }
-
-		//div {border-top:5px solid $dark; padding-top: 21px;}
 	}
 }
