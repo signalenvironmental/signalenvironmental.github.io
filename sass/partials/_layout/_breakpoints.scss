@@ -1,0 +1,15 @@
+@mixin breakpoint($point) {
+	@if $point == nav {
+		@media (max-width: 763px) { @content; }
+	}
+}
+
+/* 
+
+nav {  
+  @include breakpoint(nav) { 
+	display: none;
+  }
+}
+
+*/

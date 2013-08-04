@@ -2,7 +2,8 @@
 	header {
 		// http://compass-style.org/reference/compass/css3/images/
  		@include background(
-        	linear-gradient(top left, $dark-blue, $light-blue) no-repeat center center);
+        	linear-gradient(top left, $dark-blue, $light-blue) no-repeat center center
+        	);
 		position: relative;
 
  		.header-images {
@@ -43,8 +44,11 @@
 	.services {
 		background: $light;
 
-		.wrapper {padding: 0; border: none !important;}
+		// .wrapper {
+		// 	padding: 0; 
+		// 	border: none !important;
+		// }
 
-		div {border-top:5px solid $dark; padding-top: 21px;}
+		//div {border-top:5px solid $dark; padding-top: 21px;}
 	}
 }

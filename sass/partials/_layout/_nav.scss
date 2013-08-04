@@ -1,8 +1,14 @@
 nav {
 	-webkit-transform: translateZ(0);
+
+	.menu-button {
+		display: none;
+	}
 	
-	ul {
+	.menu {
+		display: block;
 		float: right;
+		margin: $base 0;
 
 		li {
 			display: inline-block;
@@ -20,4 +26,61 @@ nav {
 			color: $white;
 		}
 	}
+
+	@include breakpoint(nav) {
+
+		.menu {
+			display: none;
+		}
+
+		.menu-button {
+			display: block;
+			float: right;
+			margin: 31px ($base * 2) 0 0;
+			width: 96px;
+			text-align: center;
+			font-weight: 500;
+			font-family: 'Maven Pro', sans-serif;
+		}
+	}
 }
+
+.active {
+	position: relative;
+	z-index: 20000;
+	opacity: 0.95;
+
+	.menu-button {
+		background: $dark;
+		color: $white;
+		border-radius: 25px 25px 0 0;
+	}
+
+	.menu {			
+		position: absolute;
+		top: 54px;
+		right: 42px;
+		padding: $base $base 0;
+		background: $dark;
+	}
+
+	.menu li {
+		display: block;
+		margin: 0 0 21px;
+		text-align: center;
+		font-weight: 500;
+		font-family: 'Maven Pro', sans-serif;
+	}
+
+	.menu  a {
+		color: $white;
+	}
+
+	.menu  a:hover {
+		color: $green;
+		top: 0;
+	}
+}
+
+
+

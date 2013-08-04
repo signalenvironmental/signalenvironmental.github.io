@@ -1,4 +1,4 @@
-.projects {
+.projects body {
 	background: $light $project-bg no-repeat center top;
 	background-size: 100% auto;
 
@@ -12,16 +12,18 @@
 		p:last-child {
 			margin-bottom: 0;
 		}
+	
+		.text-box {
+			background: $dark;
+			color: $light;
+			padding: $base;
+		}
+
+		img {
+			width: 100%;
+		}
+
 	}
 
-	.text-box {
-		background: $dark;
-		color: $light;
-		padding: $base;
-	}
-
-	img {
-		width: 100%;
-	}
 
 }

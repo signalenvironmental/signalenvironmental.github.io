@@ -2,7 +2,13 @@
 <div class="header-images">
 
 	<div class="masthead clearfix">
-		<h1 class="logo"><a href="/" title="{{ site.name }}"><img src="/images/signal-environmental.svg" alt="{{ site.name }}" /></a></h1>
+		<h1 class="logo"><a href="/" title="{{ site.name }}">
+		{% if page.alt-logo == true %}
+			<img src="/images/signal-environmental2.svg" alt="{{ site.name }}" />
+		{% else %}
+			<img src="/images/signal-environmental.svg" alt="{{ site.name }}" />
+		{% endif %}
+		</a></h1>
 		{% include membra-nav.html %}
 	</div>
 

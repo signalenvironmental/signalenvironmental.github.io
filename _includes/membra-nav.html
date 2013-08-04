@@ -1,9 +1,10 @@
 <nav>
-	<ul>
+	<a class="menu-button btn" href="#">MENU</a>
+	<ul class="menu">
 		<li><a class="nav-home" href="/">Home</a></li>
 		{% for page in site.categories.menu %}
 		<li><a class="nav-{{ page.title }}" href="{{ page.url }}">{{ page.title }}</a></li>
 		{% endfor %}
-		<li><a class="nav-contact" href="mailto:jon@solomongiles.com?sqs_title=Get+in+Touch">Contact</a></li>
+		<li><a class="nav-contact" href="mailto:db@signalenvironmental.com?sqs_title=Get+in+Touch">Contact</a></li>
 	</ul>
 </nav>

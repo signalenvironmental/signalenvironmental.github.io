@@ -1,4 +1,30 @@
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+	{% if page.title == "Services" %}
+	<script>
+	$(function() {
+		$(window).scroll(function() {
+		    var x = $(this).scrollTop();
+		    console.log(x);
+		    $('.spin').css('transform', 'rotate(' + x * 1.5 + 'deg)');
+		});
+	});
+	</script>
+	{% endif %}
+
+
+
         <script>
+        $(function() {
+        	//script to show/hide menu
+        	$('.menu-button').click(function(){
+				$(this).parent().toggleClass("active").children("ul").toggle();
+			});
+		});
+
+
         (function(d, t) {
 		    var g = d.createElement(t),
 		        s = d.getElementsByTagName(t)[0];

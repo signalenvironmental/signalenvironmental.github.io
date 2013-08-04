@@ -3,6 +3,7 @@ layout: default
 title: Services
 categories: menu
 h2: Services
+alt-logo: true
 ---
 
 	<div class="wrapper turbine">
@@ -23,7 +24,7 @@ h2: Services
 <section class="services-list">
 
 	<div class="wrapper grid-golden clearfix">
-		<article class="clearfix">
+		<article id="assessment" class="clearfix">
 			<div class="span2-1 description">
 				<h4>Site Assessment and Due Diligence</h4>
 				<p>Understanding the suitability of a site prior to acquisition can avoid costly “surprises” during development. Signal Environmental assessments examine possible environmental legacy issues and provide solutions. Geotechnical assessments characterise soil conditions to provide insight on bearing capacity and assist with foundation design.</p>
@@ -35,7 +36,7 @@ h2: Services
 	</div>
 
 	<div class="wrapper grid-golden clearfix">
-		<article class="clearfix">
+		<article id="design" class="clearfix">
 			<div class="span2-2 description">
 				<h4>Project Design Support</h4>
 				<p>High performance building projects start with a well-vetted design. For regional scale developments to individual buildings the most successful projects adopt an integrated design approach that relies on collaborative input. An inclusive approach builds better teams, increases efficiency, and improves overall outcomes. Signal Environmental offers integrated design support to improve specification development leading to the tender process and ultimately to a superior building.</p>
@@ -47,7 +48,7 @@ h2: Services
 	</div>
 
 	<div class="wrapper grid-golden clearfix">
-		<article class="clearfix">
+		<article id="surveillance" class="clearfix">
 			<div class="span2-1 description">
 				<h4>Construction Performance Surveillance and Materials Testing Services</h4>
 				<p>Even the best plans and specifications are subject to field interpretation. Signal Environmental provides project surveillance of construction activities to keep the work on schedule and on budget. Testing of soils, concrete, steel, and building envelope ensure a building is delivered as planned.</p>
@@ -59,7 +60,7 @@ h2: Services
 	</div>
 
 	<div class="wrapper grid-golden clearfix">
-		<article class="clearfix">
+		<article id="plans" class="clearfix">
 			<div class="span2-2 description">
 				<h4>Energy Efficiency Assessments and Energy Reduction Plans</h4>
 				<p>Signal Environmental performs reviews of building envelopes and infrastructure. Mechanical and electrical system improvements can yield savings as well as improved air quality and superior light quality. Often capital investments in these types of upgrades will yield a better than 5 year return on investment.</p>
@@ -72,16 +73,3 @@ h2: Services
 	</div>
 
 </section>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-<script>
-
-$(function() {
-	$(window).scroll(function() {
-	    var x = $(this).scrollTop();
-	    console.log(x);
-	    $('.spin').css('transform', 'rotate(' + x * 1.5 + 'deg)');
-	});
-});
-</script>

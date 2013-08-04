@@ -1,5 +1,6 @@
 // modular scale: http://modularscale.com/scale/?px1=14&px2=&ra1=1.5&ra2=0
 $base: 21px;
+$border: 9px;
 
 body {
 	color: $dark;
@@ -35,6 +36,8 @@ h3, .lead {
 h4 {
 	font-size: $base;
 	line-height: $base;
+	border-bottom: $border solid $white;
+	padding-bottom: $base - $border;
 }
 
 h5 {
