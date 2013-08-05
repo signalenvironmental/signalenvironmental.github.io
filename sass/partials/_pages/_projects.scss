@@ -1,6 +1,7 @@
 .projects body {
 	background: $light $project-bg no-repeat center top;
 	background-size: 100% auto;
+	background-attachment: local;
 
 	@include breakpoint(phone) { 
 		background-size: 130% auto;
@@ -34,5 +35,20 @@
 		article {
 			@include rem('margin-bottom', $base);
 		}
+	}
+
+	@include breakpoint (desktop) {
+		.wrapper {
+			-webkit-column-count: 2;
+			-webkit-column-gap: $base;
+			-moz-column-count: 2;
+			-moz-column-gap: $base;
+			-column-count: 2;
+			-column-gap: $base;
+
+			article {
+				@include rem('margin-bottom', $base);
+			}
+		}		
 	}
 }

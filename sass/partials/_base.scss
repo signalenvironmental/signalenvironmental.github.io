@@ -1,11 +1,16 @@
 // Plugings
 @import "singularitygs";
 
+// Mixins
+@import "_base/_mixins/breakpoints";
+@import "_base/_mixins/rems";
+
+// Includes
+@import "_base/images";
+@import "_base/vars";
+
+
 // H5BP
 @import "_base/normalize";
 @import "_base/h5bp";
 @import "_base/helper";
-
-// Includes
-@import "_base/images";
-@import "_base/colors";

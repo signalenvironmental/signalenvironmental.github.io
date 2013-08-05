@@ -1,7 +1,4 @@
 // modular scale: http://modularscale.com/scale/?px1=14&px2=&ra1=1.5&ra2=0
-$base: 21px;
-$border: 9px;
-
 html {
 	font-size: 62.5%;
 }
@@ -72,5 +69,11 @@ a:hover {
 			@include rem('padding', 0 $base);
 			margin-top: 0;
 		}		
+	}
+}
+
+@include breakpoint(desktop) { 
+	html {
+		font-size: 62.5% * $big-up-desktop;//78.125
 	}
 }

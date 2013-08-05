@@ -8,10 +8,16 @@ $bubble-color: $dark;
 	background: $bubble-color;
 	color: $white;
 	text-align: center;
+	@include breakpoint(desktop) {
+		height: 413px;
+	}
 
 	h5 {
 		@include rem('margin', ($base * 2) 0 0);
 		color: $white;
+		@include breakpoint(desktop) {
+			@include rem('margin', ($base * 3) 0 0);
+		}
 	}
 
 	h3 {
@@ -23,6 +29,12 @@ $bubble-color: $dark;
 		display: block;
 		width: 116px;
 		background: RGBA(255,255,255,0.75);
+		position: relative; 
+		z-index: 1000;
+		@include breakpoint(desktop) {
+			width: $base * 8;
+			@include rem('margin-top', $base);
+		}
 	}
 }
 

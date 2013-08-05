@@ -13,6 +13,9 @@ header {
 				width: 200px;
 				@include rem('margin', 11px);
 			}
+			@include breakpoint(desktop) {
+				width: 320px;
+			}
 		}
 	}
 
@@ -41,5 +44,8 @@ header {
 
 	@include breakpoint(phone) {
 		height: $base * 16 !important;
+	}
+	@include breakpoint(desktop) {
+		height: $base * 25;
 	}
 }

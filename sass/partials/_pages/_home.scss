@@ -19,8 +19,14 @@
 		bottom: 0;
 		left: 0;
 		background-size: auto 80%;
+		@include breakpoint(desktop) {
+			background-size: auto 70%;
+		}
+		@include breakpoint(widescreen) {
+			background-size: auto 80%;
+		}
 
-		> .btn {
+		.learn-more {
 			@include rem('margin-top', $base * 3);
 		}
 	}
@@ -104,5 +110,19 @@
 			margin-top: 0;
 		}
 	}
+
+	@include breakpoint(desktop) {
+		header .header-images {
+			h2 {
+				@include rem('margin-top', $base);
+			}
+
+	  		.learn-more {
+				width: $base * 8;
+				@include rem('margin-top', $base * 2);
+	  		}
+	  	}
+	}
+
 }
 

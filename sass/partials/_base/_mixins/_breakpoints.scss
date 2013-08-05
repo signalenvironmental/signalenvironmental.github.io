@@ -19,14 +19,16 @@
 
 		// 1920 wide
 		@if $point == widescreen {
-			@media (max-width: 1920px) { @content; }
+			@media (min-width: 1920px) { @content; }
 		}
 		
 		// 1600 wide
 		@if $point == desktop {
-			@media (max-width: 1600px) { @content; }
+			@media (min-width: 1600px) { @content; }
 		}
 		
+		// there is a gap between 1280-1600 where defaults apply
+
 		// 1280 wide
 		@if $point == laptop {
 			@media (max-width: 1280px) { @content; }

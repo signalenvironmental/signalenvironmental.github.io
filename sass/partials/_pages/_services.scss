@@ -63,6 +63,16 @@
 			}	
 		}
 
+		@include breakpoint(desktop) { 
+			.spin {
+				right: 215px;
+			}
+
+			.post {
+				right: 369px;
+			}	
+		}
+
 	}
 
 	.intro {

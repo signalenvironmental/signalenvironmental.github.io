@@ -63,7 +63,11 @@ section {
 // 4 5 6	3-4
 // 7 8 9	3-7
 // 10 11 12	3-10
-
+@include breakpoint(desktop) { 
+	.wrapper {
+		max-width: 840px * $big-up-desktop;//1050
+	}
+}
 
 @include breakpoint(wrapper) {
 	section {
@@ -115,4 +119,6 @@ section {
 		}
 	}
 }
+
+
 
