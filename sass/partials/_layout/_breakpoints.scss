@@ -8,7 +8,7 @@
 		}
 
 		// nav
-		@if $point == nav {
+		@if $point == mobile-menu {
 			@media (max-width: 763px) { @content; }
 		}
 
@@ -55,11 +55,9 @@
 
 /* 
 
-nav {  
-  @include breakpoint(nav) { 
-	display: none;
-  }
-}
+	@include breakpoint(name) {
+		
+	}
 
 */
 

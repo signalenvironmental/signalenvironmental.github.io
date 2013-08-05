@@ -4,9 +4,9 @@
 	<div class="masthead clearfix">
 		<h1 class="logo"><a href="/" title="{{ site.name }}">
 		{% if page.alt-logo == true %}
-			<img src="/images/signal-environmental2.svg" alt="{{ site.name }}" />
+			<img src="/images/signal-environmental2.svg" onerror="this.onerror=null; this.src='/images/signal-environmental2.svg'" alt="{{ site.name }}" />
 		{% else %}
-			<img src="/images/signal-environmental.svg" alt="{{ site.name }}" />
+			<img src="/images/signal-environmental.svg" onerror="this.onerror=null; this.src='/images/signal-environmental.svg'" alt="{{ site.name }}" />
 		{% endif %}
 		</a></h1>
 		{% include membra-nav.html %}

@@ -2,8 +2,12 @@
 	background: $light $project-bg no-repeat center top;
 	background-size: 100% auto;
 
-	header {
-		height: $base * 16;
+	@include breakpoint(phone) { 
+		background-size: 130% auto;
+	}
+
+	section {
+		padding-top: 0;
 	}
 
 	article {
@@ -21,6 +25,14 @@
 
 		img {
 			width: 100%;
+		}
+	}
+	@include breakpoint(phone) { 
+		background-size: 130% auto;
+
+
+		article {
+			@include rem('margin-bottom', $base);
 		}
 	}
 }

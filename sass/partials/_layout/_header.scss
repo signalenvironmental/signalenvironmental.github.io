@@ -8,6 +8,11 @@ header {
 		img {
 			@include rem('margin', 16px 0 0 31px);
 			width: 231px;
+
+			@include breakpoint(phone) {
+				width: 200px;
+				@include rem('margin', 11px);
+			}
 		}
 	}
 
@@ -22,12 +27,19 @@ header {
 
 	h2 {
 		@include rem('margin-top', $base * 2);
+		@include breakpoint(phone) {
+			margin-top: 0;
+		}
 	}
 
-	.btn {
+	.learn-more {
 		position: relative;
 		display: block;
 		margin: 0 auto;
 		width: 116px;
+	}
+
+	@include breakpoint(phone) {
+		height: $base * 16 !important;
 	}
 }

@@ -25,22 +25,19 @@
 		}
 	}
 
-	section {
+	.intro {
 		clear: both;
 		width: 100%;
-		background: $white;
-		background-image: $bg-grid;
-		background-repeat: repeat-x;
-		background-position:center;
+		background: $white $bg-grid repeat-x center center;
 		background-size: contain;
 
 		.span2-1 {
 			@include rem('margin-top', $base * 2);
 		}
-	}
 
-	.intro h4 {
-		border-bottom-color: $light;
+		h4 {
+			border-bottom-color: $light;
+		}
 	}
 
 	.services {
@@ -54,10 +51,14 @@
 	  	}
 	}
 
-	@include breakpoint(tablet) { 
+	@include breakpoint(wrapper) { 
 	  	header {
 	  		height: $base * 25;
 
+	  		.learn-more {
+	  			margin-top: 0 !important;
+	  		}
+		  	
 		  	h2 {
 				padding: 0 9%;
 		  	}
@@ -65,11 +66,7 @@
 		  	h3 {
 				padding: 0 20%;
 		  	}
-
-	  		.learn-more {
-	  			margin-top: 0 !important;
-	  		}
-	  	}
+	  	}	
 	}
 
 	@include breakpoint(mini) { 
@@ -81,16 +78,30 @@
 	}
 
 	@include breakpoint(phone) { 
-		
+
+	  	header {
+	  		h2 , h3 {
+				@include rem('padding', 0 $base);
+	  		}	
+	  	}
+	
+		.intro {
+			padding-top: 0;
+		}
+
 		.service-teaser {
-			background: $dark;
 			@include rem('padding', $base $base 0);
 			@include rem('margin-top', $base);
+			background: $dark;
 			color: $light;				
 			
 			br {
 				display: none;
 			}
+		}
+
+		.service-teaser:first-child {
+			margin-top: 0;
 		}
 	}
 }

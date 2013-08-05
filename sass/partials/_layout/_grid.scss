@@ -65,7 +65,7 @@ section {
 // 10 11 12	3-10
 
 
-@include breakpoint(wrapper) { 
+@include breakpoint(wrapper) {
 	section {
 		@include rem('padding-left', $base);
 		@include rem('padding-right', $base);

@@ -1,33 +1,99 @@
-nav {
-	-webkit-transform: translateZ(0);
+// universal
+.menu-button {
+	display: none;
+}
 
-	.menu-button {
-		display: none;
+.menu {
+	@include rem('margin', $base 0);
+	display: block;
+	float: right;
+
+	li {
+		@include rem('margin-right', $base * 2);
+		display: inline-block;
+		font-weight: 500;
+		font-family: 'Maven Pro', sans-serif;
 	}
-	
-	.menu {
-		@include rem('margin', $base 0);
-		display: block;
-		float: right;
 
-		li {
-			@include rem('margin-right', $base * 2);
-			display: inline-block;
-			font-weight: 500;
-			font-family: 'Maven Pro', sans-serif;
-		}
+	a {
+		color: $dark;
+		text-decoration: none;
+	}
 
-		a {
-			color: $dark;
-			text-decoration: none;
-		}
+	a:hover {
+		color: $white;
+	}
+}
 
-		a:hover {
+// active states
+.home .nav-home, 
+.services .nav-Services,
+.projects .nav-Projects,
+.about .nav-About,
+.contact .nav-Contact {
+	pointer-events: none;
+	cursor: default;
+	top: 0;
+	color: $white;
+}
+
+.projects header .nav-Projects {
+	color: $green;
+}
+
+@include breakpoint(mobile-menu) {
+	.home header .nav-home, 
+	.services header .nav-Services,
+	.projects header .nav-Projects,
+	.about header .nav-About {
+		color: $green !important;
+	}
+}
+
+// header only
+header {
+	nav {
+		-webkit-transform: translateZ(0);
+	}
+
+	.active {
+		position: relative;
+		z-index: 20000;
+		opacity: 0.95;
+
+		.menu-button {
+			background: $dark;
 			color: $white;
+			border-radius: 25px 25px 0 0;
+		}
+
+		.menu {			
+			@include rem('padding', $base $base 0);
+			position: absolute;
+			top: 54px;
+			right: 42px;
+			background: $dark;
+		
+			li {
+				@include rem('margin', 0 0 $base);
+				display: block;
+				text-align: center;
+				font-weight: 500;
+				font-family: 'Maven Pro', sans-serif;
+			}
+
+			a {
+				color: $white;
+			}
+
+			a:hover {
+				color: $green;
+				top: 0;
+			}
 		}
 	}
 
-	@include breakpoint(nav) {
+	@include breakpoint(mobile-menu) {
 
 		.menu {
 			display: none;
@@ -42,44 +108,26 @@ nav {
 			font-family: 'Maven Pro', sans-serif;
 		}
 	}
-}
 
-.active {
-	position: relative;
-	z-index: 20000;
-	opacity: 0.95;
-
-	.menu-button {
-		background: $dark;
-		color: $white;
-		border-radius: 25px 25px 0 0;
-	}
-
-	.menu {			
-		@include rem('padding', $base $base 0);
-		position: absolute;
-		top: 54px;
-		right: 42px;
-		background: $dark;
-	}
-
-	.menu li {
-		@include rem('margin', 0 0 $base);
-		display: block;
-		text-align: center;
-		font-weight: 500;
-		font-family: 'Maven Pro', sans-serif;
-	}
-
-	.menu  a {
-		color: $white;
-	}
-
-	.menu  a:hover {
-		color: $green;
-		top: 0;
+	@include breakpoint(phone) {
+		.menu-button {
+			@include rem('margin', $base 11px);
+			@include rem('padding', 11px 0 10px);
+			width: 76px;
+		}
+		.active .menu {			
+			@include rem('padding', 11px 11px 0);
+			top: 44px;
+			right: 11px;
+		}
 	}
 }
 
-
-
+// footer only
+footer {
+	@include breakpoint(mobile-menu) {
+		ul {
+			text-align: center;
+		}
+	}
+}

@@ -37,7 +37,6 @@ h3 {
 	@include rem('line-height', $base * 2);
 }
 
-
 h4, .border-bottom {
 	@include rem('font-size', $base);
 	padding-bottom: $base - $border;
@@ -59,11 +58,19 @@ a:hover {
 	margin-bottom: 0;
 }
 
-
 //breakpoints
 @include breakpoint(phone) { 
-	html {
-		font-size: 50%;
+	header {
+		h1, h2 {
+			@include rem('font-size',32px);
+			@include rem('line-height', $base * 2);
+		}
+
+		h3 {
+			@include rem('line-height', $base);
+			@include rem('font-size', $base);
+			@include rem('padding', 0 $base);
+			margin-top: 0;
+		}		
 	}
 }
-
