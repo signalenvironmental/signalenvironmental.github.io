@@ -8,13 +8,16 @@ header {
 		img {
 			@include rem('margin', 16px 0 0 31px);
 			width: 231px;
+			height: 63px;
 
 			@include breakpoint(phone) {
 				width: 200px;
+				height: 54px;
 				@include rem('margin', 11px);
 			}
 			@include breakpoint(desktop) {
 				width: 320px;
+				height: 87px;
 			}
 		}
 	}

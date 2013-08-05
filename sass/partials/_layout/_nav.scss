@@ -94,7 +94,6 @@ header {
 	}
 
 	@include breakpoint(mobile-menu) {
-
 		.menu {
 			display: none;
 		}

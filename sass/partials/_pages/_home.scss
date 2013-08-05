@@ -6,6 +6,7 @@
         	linear-gradient(top left, $dark-blue, $light-blue) no-repeat center center
         	);
 		position: relative;
+		background-color: lighten($dark-blue, 15%);
 	}
 
  	.header-images {
