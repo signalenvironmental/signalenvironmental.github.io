@@ -9,7 +9,7 @@ $bubble-color: $dark;
 	color: $white;
 	text-align: center;
 	@include breakpoint(desktop) {
-		height: 413px;
+		height: 344px;
 	}
 
 	h5 {
@@ -35,6 +35,24 @@ $bubble-color: $dark;
 			width: $base * 8;
 			@include rem('margin-top', $base);
 		}
+	}
+
+	.btn.large {
+		width: 160px;
+		@include breakpoint(desktop) {
+			width: 210px;
+		}
+	}
+}
+
+.bubble.inverted {
+
+	h5 {
+		margin: 0;
+	}
+
+	h3 {
+		@include rem('margin', ($base) 0 0);
 	}
 }
 

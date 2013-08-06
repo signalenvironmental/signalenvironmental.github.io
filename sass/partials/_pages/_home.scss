@@ -115,7 +115,7 @@
 	@include breakpoint(desktop) {
 		header .header-images {
 			h2 {
-				@include rem('margin-top', $base);
+				@include rem('margin-top', $base * 2);
 			}
 
 	  		.learn-more {

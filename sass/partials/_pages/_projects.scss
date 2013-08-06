@@ -28,6 +28,14 @@
 			width: 100%;
 		}
 	}
+	.bubble {
+		width: 60%;
+		min-width: 276px;
+		margin: 0 auto;
+		@include breakpoint(desktop) {
+			width: 80%;
+		}
+	}
 	@include breakpoint(phone) { 
 		background-size: 130% auto;
 
