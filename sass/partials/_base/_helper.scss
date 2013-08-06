@@ -101,3 +101,12 @@
 .clearfix {
     *zoom: 1;
 }
+
+// Hide BR tags & replace with spaces
+.hide {
+    content: ' '
+}
+
+.hide:after {
+    content: ' '
+}

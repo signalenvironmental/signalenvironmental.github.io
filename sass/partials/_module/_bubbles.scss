@@ -9,15 +9,12 @@ $bubble-color: $dark;
 	color: $white;
 	text-align: center;
 	@include breakpoint(desktop) {
-		height: 344px;
+		height: 303px;
 	}
 
 	h5 {
 		@include rem('margin', ($base * 2) 0 0);
 		color: $white;
-		@include breakpoint(desktop) {
-			@include rem('margin', ($base * 3) 0 0);
-		}
 	}
 
 	h3 {
@@ -40,7 +37,7 @@ $bubble-color: $dark;
 	.btn.large {
 		width: 160px;
 		@include breakpoint(desktop) {
-			width: 210px;
+			width: 180px;
 		}
 	}
 }
@@ -53,7 +50,14 @@ $bubble-color: $dark;
 
 	h3 {
 		@include rem('margin', ($base) 0 0);
+		@include breakpoint(phone) {
+			margin: 0;
+		}
+		@include breakpoint(desktop) {
+			margin: 0;
+		}
 	}
+
 }
 
 .bubble:after {

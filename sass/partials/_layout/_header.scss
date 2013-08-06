@@ -48,7 +48,4 @@ header {
 	@include breakpoint(phone) {
 		height: $base * 16 !important;
 	}
-	@include breakpoint(desktop) {
-		height: $base * 25;
-	}
 }
